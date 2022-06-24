@@ -32,3 +32,11 @@ def lend_money(lender, borrower, amount):
     borrower["monies"] += amount
     lender["monies"] -= amount
 
+def all_favourite_foods(people):
+    list_all_favourite_foods = []
+    for person in people:
+        persons_favourite_foods = person["favourites"]["snacks"]
+        for food in persons_favourite_foods:
+            list_all_favourite_foods.append(food)
+    return list_all_favourite_foods
+        
