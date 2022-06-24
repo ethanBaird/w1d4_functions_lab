@@ -46,3 +46,10 @@ def find_no_friends(people):
         if person["friends"] == []:
             people_with_no_friends.append(person)
     return people_with_no_friends
+
+def unique_favourite_tv_shows(people):
+    list_favourite_tv_shows = []
+    for person in people:
+        if person["favourites"]["tv_show"] not in list_favourite_tv_shows:
+            list_favourite_tv_shows.append(person["favourites"]["tv_show"])
+    return list_favourite_tv_shows
